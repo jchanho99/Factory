@@ -6,6 +6,14 @@
 - Docker (컨테이너 개발용)
 - Terraform (온프레미스 & AWS 인프라 설계용)
 - Ansible (AWS 인프라 간단 배포용)
-### 사용 언어 정보
-- Python (번호판 인식 AI 개발용 / `3.14`)
-- Go (MSA 연결 API Gateway용 / [버전 정보 기재 필요]) 
+<br>
+### 인프라 개요도
+[사진 추가 예정]
+<br>
+### 개발 규칙
+- Indentation: `2 spaces = 1 tab`
+- Representative: `Org`, `Department`, `MSA`, `Deveolper`
+- Commit Message: `Issue` 번호 적용 + 간단히 진행상황 기재
+<br>
+### 디렉토리 구조
+- [`tree`를 이용해 기재 예정]
