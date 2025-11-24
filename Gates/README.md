@@ -12,4 +12,8 @@
 ### 인프라 적용 정보
 - Docker를 이용한 컨테이너화
 - 개방 포트번호: `8000`
-
+### 디렉토리 별 사용 라이브러리 정리
+#### Plate
+- 번호판 인식 데이터: AIHUB[https://aihub.or.kr/aihubdata/data/view.do?srchOptnCnd=OPTNCND001&currMenu=115&topMenu=100&searchKeyword=%EB%B2%88%ED%98%B8%ED%8C%90&aihubDataSe=data&dataSetSn=172]
+#### MainGate
+#### EquimentGate
