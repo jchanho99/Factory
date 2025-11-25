@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings(BaseSettings):
+    is_env_ok: str
     rabbitmq_url: str
     rabbitmq_queue_name: str
 

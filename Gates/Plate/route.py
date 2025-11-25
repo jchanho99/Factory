@@ -67,6 +67,11 @@ async def publish_confirmation_to_mq(plate_number: str, is_confirmed: bool):
 
 # ----------------- FastAPI 엔드포인트 -----------------
 
+@app.get("/plate/check")
+def is_env_loaded():
+    return {"status": settings.is_env_ok}
+
+
 @app.get("/plate/healthy")
 def is_server_healthy():
     return {"status": "Service is running"}
