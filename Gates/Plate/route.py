@@ -1,0 +1,24 @@
+from fastapi import FastAPI
+import asyncio
+
+# FastAPI 애플리케이션 인스턴스 생성
+app = FastAPI()
+
+# 비동기 함수(async def)로 GET 요청 처리
+@app.get("/door/open")
+async def open_sesame(name: str):
+    """
+    이름을 입력받아 환영 메시지를 반환합니다.
+    실제 비동기 작업을 시뮬레이션하기 위해 1초간 대기합니다.
+    """
+    
+    # 실제 DB 조회나 외부 API 호출과 같은 I/O 작업 시뮬레이션
+    # asyncio.sleep은 비동기적으로 작동하여, 이 대기 시간 동안 서버는 다른 요청을 처리할 수 있습니다.
+    await asyncio.sleep(1)
+    
+    return {"message": f"Hello, {name}"}
+
+# 루트 경로 ("/")에 대한 간단한 동기 요청 처리 (선택 사항)
+@app.get("/door/health")
+def is_healthy():
+    return {"status": "Service is running"}
